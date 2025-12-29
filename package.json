@@ -1,0 +1,25 @@
+{
+    "name": "heroku-static-server-template",
+    "version": "1.0.0",
+    "description": "Universal static file server template for Heroku - serves any static site from /public directory",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "engines": {
+        "node": "18.x"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "static",
+        "heroku",
+        "template"
+    ],
+    "author": "",
+    "license": "MIT"
+}
