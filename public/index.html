@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Caren Carpenters Inc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -12,45 +13,84 @@
             color: #333;
             line-height: 1.6;
         }
+
         header {
-            background-color: #6b4f2c;
-            color: #ffffff;
-            padding: 20px 10%;
+            background-color: #5a3e1b;
+            color: #fff;
+            padding: 30px 10%;
+            text-align: center;
         }
+
         header h1 {
-            margin: 0;
+            margin-bottom: 5px;
         }
+
         nav {
-            margin-top: 10px;
+            margin-top: 15px;
         }
+
         nav a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
-            margin-right: 15px;
+            margin: 0 10px;
             font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
+        .hero {
+            background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
         section {
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 40px 10%;
             margin-bottom: 10px;
         }
+
         h2 {
-            color: #6b4f2c;
+            color: #5a3e1b;
         }
-        ul {
-            padding-left: 20px;
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
-        .contact-box {
-            background-color: #f9f6f2;
+
+        .service-box {
+            background: #f9f6f2;
             padding: 20px;
-            border-left: 5px solid #6b4f2c;
+            border-radius: 5px;
+            text-align: center;
         }
+
+        .service-box img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-box {
+            background: #f9f6f2;
+            padding: 20px;
+            border-left: 5px solid #5a3e1b;
+        }
+
         footer {
             background-color: #333;
-            color: #ffffff;
+            color: #fff;
             text-align: center;
             padding: 20px 10%;
             font-size: 14px;
@@ -61,9 +101,9 @@
 
 <header>
     <h1>Caren Carpenters Inc</h1>
-    <p>Professional Carpentry & Woodworking Solutions</p>
+    <p>Expert Carpentry & Woodworking Services</p>
     <nav>
-        <a href="#about">About Us</a>
+        <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
         <a href="#privacy">Privacy Policy</a>
@@ -71,42 +111,60 @@
     </nav>
 </header>
 
+<div class="hero">
+    <h2>Quality Craftsmanship You Can Trust</h2>
+    <p>Residential & Commercial Carpentry Solutions</p>
+</div>
+
 <section id="about">
     <h2>About Us</h2>
     <p>
-        Caren Carpenters Inc is a trusted carpentry and woodworking company committed to
-        delivering high-quality craftsmanship and reliable service. We work with residential
-        and commercial clients to create durable, functional, and visually appealing wood solutions.
+        Caren Carpenters Inc is a professional carpentry and woodworking company dedicated
+        to delivering reliable, durable, and high-quality craftsmanship. With years of experience,
+        we serve residential and commercial clients with precision and care.
     </p>
     <p>
-        Our experienced team takes pride in attention to detail, safety, and customer satisfaction.
-        From small repairs to full-scale construction projects, we approach every job with
-        professionalism and care.
+        Our mission is to turn ideas into reality through expert woodwork, honest pricing,
+        and dependable service. Every project—large or small—is handled with attention
+        to detail and customer satisfaction.
     </p>
 </section>
 
 <section id="services">
     <h2>Our Services</h2>
-    <ul>
-        <li>Custom Carpentry & Woodwork</li>
-        <li>Furniture Design and Installation</li>
-        <li>Residential Renovations</li>
-        <li>Commercial Carpentry Services</li>
-        <li>Doors, Windows & Cabinet Installation</li>
-        <li>Repair and Maintenance Services</li>
-    </ul>
+    <div class="services">
+
+        <div class="service-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Custom Carpentry">
+            <h3>Custom Carpentry</h3>
+            <p>Tailor-made wood solutions designed to match your space and needs.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="https://images.unsplash.com/photo-1581091870627-3d6e06c23c1a" alt="Furniture Installation">
+            <h3>Furniture Installation</h3>
+            <p>Professional installation of cabinets, shelves, and custom furniture.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="https://images.unsplash.com/photo-1598300053654-02d47bda5b99" alt="Renovation">
+            <h3>Renovations</h3>
+            <p>Residential and commercial renovation carpentry services.</p>
+        </div>
+
+    </div>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact-box">
-        <p><strong>Company Name:</strong> Caren Carpenters Inc</p>
+        <p><strong>Company:</strong> Caren Carpenters Inc</p>
         <p><strong>Email:</strong> info@carencarpentersinc.com</p>
-        <p><strong>Phone:</strong> +1 (000) 987-6543</p>
-        <p><strong>Address:</strong> 456 Woodwork Avenue, Craft City, USA</p>
+        <p><strong>Phone:</strong> +1 (000) 555-7890</p>
+        <p><strong>Address:</strong> 456 Woodcraft Lane, Buildtown, USA</p>
         <p>
-            Please reach out to us for project inquiries, estimates, or general questions.
-            We strive to respond to all requests within 1–2 business days.
+            Contact us for quotes, consultations, or general inquiries.
+            We respond within 1–2 business days.
         </p>
     </div>
 </section>
@@ -114,26 +172,24 @@
 <section id="privacy">
     <h2>Privacy Policy</h2>
     <p>
-        Caren Carpenters Inc values your privacy. Any personal information provided through
-        our website, email, or phone communication is used only to respond to inquiries,
-        provide services, or improve customer experience.
+        Caren Carpenters Inc respects your privacy. Any personal information collected through
+        our website or communications is used only to provide services and respond to inquiries.
     </p>
     <p>
-        We do not sell, rent, or share personal data with third parties unless required by law.
-        By using this website, you agree to the terms of this privacy policy.
+        We do not sell or share personal data with third parties unless required by law.
+        By using our website, you agree to this privacy policy.
     </p>
 </section>
 
 <section id="disclaimer">
     <h2>Disclaimer</h2>
     <p>
-        The content on this website is provided for general informational purposes only.
-        Caren Carpenters Inc makes no guarantees regarding the accuracy or completeness
-        of the information presented.
+        The information on this website is provided for general informational purposes only.
+        Caren Carpenters Inc makes no warranties regarding accuracy or completeness.
     </p>
     <p>
-        We are not liable for any loss or damage arising from reliance on the information
-        provided on this website or from the use of our services.
+        We are not responsible for any loss or damage resulting from the use of this website
+        or reliance on its content.
     </p>
 </section>
 
